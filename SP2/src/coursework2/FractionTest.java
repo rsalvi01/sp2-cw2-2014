@@ -70,8 +70,8 @@ public class FractionTest
 		Fraction d = new Fraction(-8,-2);
 		Fraction res3 = new Fraction(4,1);
 		
-		Fraction e = new Fraction(1,-2);
-		Fraction res4 = new Fraction(4,1); // test should fail
+		//Fraction e = new Fraction(1,-2);
+		//Fraction res4 = new Fraction(4,1); // test should fail
 					
 		assertTrue(a.absValue().equals(res));		
 		assertTrue(b.absValue().equals(res1));
@@ -96,8 +96,8 @@ public class FractionTest
 		Fraction d = new Fraction(-8,-2);
 		Fraction res3 = new Fraction(-8,2);
 		
-		Fraction e = new Fraction(8,-2);
-		Fraction res4 = new Fraction(-4,1); // test should fail	
+		//Fraction e = new Fraction(8,-2);
+		//Fraction res4 = new Fraction(-4,1); // test should fail	
 					
 		assertTrue(a.negate().equals(res));		
 		assertTrue(b.negate().equals(res1));
@@ -116,8 +116,8 @@ public class FractionTest
 		Fraction b = new Fraction(8,-1);
 		String res1 = "-8";
 		
-		Fraction c = new Fraction(7,3);
-		String res2 = "7"; //should fail
+		//Fraction c = new Fraction(7,3);
+		//String res2 = "7"; //should fail
 				
 		assertTrue(a.toString().equals(res));
 		assertTrue(b.toString().equals(res1));
