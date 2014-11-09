@@ -26,6 +26,13 @@ public class Fraction
 	setDenominator(denom / gcd);
 	}
 	
+	//Constructor for integer "fraction"
+	public Fraction(int num)
+	{			
+	setNumerator(num);
+	setDenominator(1);
+	}
+	
 	@Override
 	public String toString()
 	{
