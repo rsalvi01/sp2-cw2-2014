@@ -3,8 +3,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Helper {
 
+public class Helper
+{
 	public static String removeDuplicateSpaces(String userInput)
 	{
 		//replacing any sequential white spaces from user input
@@ -54,16 +55,27 @@ public class Helper {
 
 	public static boolean isFraction(String token)
 	{
-		String[] check = token.split("/");
-
-		if (isInteger(check[0]) && isInteger(check[1]))
+		if (token.contains("/"))
+		{
+			String[] check = token.split("/");
+			
+			if (isInteger(check[0]) && isInteger(check[1]))
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		else if (isInteger(token)) 
 		{
 			return true;
 		}
 		else
 		{
 			return false;
-		}		
+		}
 	}
 
 	public static boolean isInteger(String input)  
