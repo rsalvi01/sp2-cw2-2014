@@ -18,9 +18,9 @@ public class FractionTest
 	@Test
 	public void testAdd()
 	{
-		Fraction a = new Fraction(1,2);
+		Fraction a = new Fraction(5,1);
 		Fraction b = new Fraction(1,3);
-		Fraction res = new Fraction(5,6);		
+		Fraction res = new Fraction(32,6);		
 					
 		assertTrue(a.add(b).equals(res));		
 	}
