@@ -1,5 +1,4 @@
 package coursework2;
-import java.util.Arrays;
 
 public class Helper
 {
@@ -14,19 +13,35 @@ public class Helper
 	
 	public static boolean isOperator(String token)
 	{
-		String[] operators = {"*","/","+","-"};
-		return Arrays.asList(operators).contains(token);		
+		if(token == "*" || token == "/" || token == "+" || token == "-")
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 
 	public static boolean isModifier(String token)
 	{
-		String[] modifiers = {"A","a","Abs","Q","q","quit","C","c","Clear","N","n","neg"};
-		return Arrays.asList(modifiers).contains(token);		
+		String[] modifiers = {"A","a","Abs","Q","q","Quit","C","c","Clear","N","n","Neg"};
+		int count = modifiers.length;
+		
+		for (int i = 0; i < count; i++)
+		{
+			if (modifiers[i] == token)
+			{
+				return true;
+			}						
+		}
+		return false;
+		
 	}
 
 	public static boolean isFraction(String token)
 	{
-		if (token.contains("/"))
+		if (token.contains("/") && token.length()>1)
 		{
 			String[] check = token.split("/");
 			
